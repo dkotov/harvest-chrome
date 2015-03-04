@@ -10,8 +10,8 @@
         this.addTimer = __bind(this.addTimer, this);
         this.addTimers = __bind(this.addTimers, this);
         this.projectNameSelector = [
-          "a[title^='Project: ']",            // full-screen view and edit
-          ".sb-board-name"                    // agile popup
+          ".fsi-property .attribute.bold",            // full-screen view and edit
+          ".sb-settings-criteria, .sb-board-name"     // agile popup (try find project name, if failed - use board name)
         ].join(", ");
         this.itemSelector = [
           ".toolbar_fsi",                     // full-screen view
